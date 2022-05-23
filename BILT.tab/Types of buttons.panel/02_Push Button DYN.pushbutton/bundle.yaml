@@ -1,8 +1,8 @@
 engine: 
   clean: true
 title:
-  fr_fr: Script Dynamo
-  en_us: Dynamo Script
+  fr_fr: 02_Script Dynamo
+  en_us: 02_Dynamo Script
 tooltip:
-  fr_fr: Exemple de script dynamo hébergé par un bouton pyRevit
-  en_us: Exemple of a dynamo script hosted by a pyRevit button
+  fr_fr: Lennnnnnnnnnnnnnnnnnnnnnnnnnt !!! Exemple de script dynamo hébergé par un bouton pyRevit
+  en_us: Sloooooooooowwwwwwwwwwwwwwwww !!! Example of a dynamo script hosted by a pyRevit button
