@@ -2,5 +2,5 @@ title:
   fr_fr: "Contrôle qualité"
   en_us: Quality control
 tooltip:
-  fr_fr: "Contrôle qualité"
-  en_us: Quality control
+  fr_fr: "Contrôle qualité, utilisez shift click pour configurer les tests"
+  en_us: Quality control use shift+click to configure the tests

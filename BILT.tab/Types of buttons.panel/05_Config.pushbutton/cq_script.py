@@ -14,6 +14,7 @@ doc = revit.doc
 
 # Series of queries
 
+
 def name(doc):
     """returns file name - everything in path from "\\" or "/" to the end"""
     name = doc.PathName
@@ -75,7 +76,10 @@ timestamp = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
 # Grab data from config
 my_config = script.get_config()
-tests = getattr(my_config, "TESTS")
+tests = getattr(my_config, "BILT_tests")
+
+# set minimal value to empty string
+pname, pnumber, p_client_name, p_organization_name, p_organization_description, p_building_name, p_author, p_issue_date, p_status, p_address = "", "", "", "", "", "", "", "", "", ""
 
 # check if queries requested in config file
 if tests == [] or tests == None:
@@ -83,6 +87,12 @@ if tests == [] or tests == None:
     pnumber = project_number(doc)
     p_client_name = project_client_name(doc)
     p_organization_name = project_organization_name(doc)
+    p_organization_description = project_organization_description(doc)
+    p_building_name = project_building_name(doc)
+    p_author = project_author(doc)
+    p_issue_date = project_issue_date(doc)
+    p_status = project_status(doc)
+    p_address = project_address(doc)
 if "Project Name" in tests:
     pname = project_name(doc)
 if "Project Number" in tests:
@@ -104,5 +114,6 @@ if "Project Status" in tests:
 if "Project Address" in tests:
     p_address = project_address(doc)
 
-output.print_md(timestamp + "\n\n" + pname + "\n\n" + pnumber + "\n\n" + p_client_name + "\n\n" + p_organization_name + "\n\n" +
-                p_organization_description + "\n\n" + p_building_name + "\n\n" + p_author + "\n\n" + p_issue_date + "\n\n" + p_status + "\n\n" + p_address)
+# print the whole thing
+output.print_md(pname + "\n\n" + pnumber + "\n\n" + p_client_name + "\n\n" + p_organization_name + "\n\n" + p_organization_description +
+                "\n\n" + p_building_name + "\n\n" + p_author + "\n\n" + p_issue_date + "\n\n" + p_status + "\n\n" + p_address)
