@@ -1,0 +1,6 @@
+title:
+  fr_fr: Modèle Analytique OFF
+  en_us: OFF Analytical model
+tooltip:
+  fr_fr: Permet  de désactiver tous les éléments ayant le modèle analytique coché
+  en_us: De-activates analytical model on structural elements
