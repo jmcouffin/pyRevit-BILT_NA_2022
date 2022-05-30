@@ -33,8 +33,8 @@ analyticalCollector = DB.FilteredElementCollector( doc ).WherePasses( filter ).T
 processed_list = 0
 
 with revit.Transaction('Set Analytical Model 2'):
-    for i in analyticalCollector:
-        object_param_AnalyticalModel = i.get_Parameter(DB.BuiltInParameter.STRUCTURAL_ANALYTICAL_MODEL)
+    for element in analyticalCollector:
+        object_param_AnalyticalModel = element.get_Parameter(param)
         new_value = False
         # try when structure model is not activated (usually for architectural walls)
         try: 

@@ -10,7 +10,7 @@ output.center()
 
 # print a picture in a window
 output.print_md('# No Revit was hurt in the process!')
-output.print_image("C:\pyRevit\pyBiltNA.extension\BILT.tab\Types of buttons.panel\\01_Push Button.pushbutton\meme.jpg")
+output.print_image("C:\pyRevit\pyBiltNA.extension\BILT.tab\Types of buttons.panel\\01_Push Button.pushbutton\meme.jpg") # you will need a picture in the same folder as the script
 
 # let's do something with revit at the Application Level
 output.print_md('You are using the following revit build {}'.format(revit.HOST_APP.build))
