@@ -1,6 +1,6 @@
 type: extension
 rocket_mode_compatible: true
-name: pyBILTNA # a name for your pyrevit extension
+name: pyBiltNA # a name for your pyrevit extension
 description: pyRevit tools creation workshop # a description of what it is
 author: Jean-Marc Couffin # your name
 author_profile: https://linkedin.com/in/jmcouffin # [optional] a link to your profile
