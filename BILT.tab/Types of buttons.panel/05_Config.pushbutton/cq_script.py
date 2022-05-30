@@ -2,7 +2,7 @@
 
 import datetime
 from pyrevit import script
-from pyrevit import revit
+from pyrevit import revit, DB
 
 output = script.get_output()
 output.close_others(True)
@@ -26,13 +26,13 @@ def project_name(doc):
     project_name = doc.ProjectInformation.Name
     return project_name
 
-def warnings(doc):
+def doc_warnings(doc):
     warnings = doc.GetWarnings()
     descriptions = []
     for warning in warnings:
         descriptions.append(DB.FailureMessage.GetDescriptionText(warning))
     if len(descriptions):
-        return str(len(descriptions))
+        return str(len(descriptions)) + ' Warnings in the project'
 
 # set minimal value to empty string
 pname, pnumber, warnings = "", "", ""
@@ -47,7 +47,7 @@ if "Project Name" in tests:
 if "Project Number" in tests:
     pnumber = project_number(doc)
 if "Warnings" in tests:
-    warnings = warnings(doc)
+    warnings = doc_warnings(doc)
 
 # print the whole thing
 output.print_md(pname + "\n\n" + pnumber + "\n\n" + warnings)
