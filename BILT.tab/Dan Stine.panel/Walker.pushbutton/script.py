@@ -1,4 +1,3 @@
-from socket import fromshare
 from pyrevit import revit, DB, script, forms
 
 # subcategory walker
@@ -8,7 +7,7 @@ spaces = DB.FilteredElementCollector(revit.doc).OfCategory(DB.BuiltInCategory.OS
 subcats = []
 
 for space in spaces:
-    subcats.append(space.get_Parameter(DB.BuiltInParameter.SPACE_SUB_CATEGORY).AsString())
+    subcats.append(space.get_Parameter(DB.BuiltInParameter.ROOM_SPACE_TYPE_PARAM))
 
 print (subcats)
 
