@@ -1,4 +1,5 @@
 # Take Control Over Revit By Creating Tools & Your Own Toolbar With pyRevit
+
 pyRevit extensions presented @ BILT NA Anaheim, June 14th, 2022
 
 Thanks to all attendees! It was a pleasure.
@@ -26,7 +27,7 @@ This presentation will run you through the process and the tools for you to crea
 Please use the fork button
 ![image](https://user-images.githubusercontent.com/7872003/174556481-c80a07c5-28ad-49d2-b369-456285ecc5b3.png)
 
-Then you can install the toolbar (after installing pyRevit) with the following command line
+Then you can install the toolbar (after installing [pyRevit](https://github.com/eirannejad/pyRevit/releases)) with the following command line
 ```
 pyrevit extend ui pyBiltNA https://github.com/**YourGithubUser**/pyRevit-BILT_NA_2022.git --dest="C:\pyRevit"
 ```
@@ -37,3 +38,5 @@ pyrevit extend ui pyBiltNA https://github.com/**YourGithubUser**/pyRevit-BILT_NA
 
 ## Comments and improvements
 Comments and improvements are both welcome through Issues
+
+Made possible thanks to [pyRevit](https://github.com/eirannejad/pyRevit) and its creator [Ehsan](https://ein.sh/)
