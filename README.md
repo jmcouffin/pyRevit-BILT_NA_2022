@@ -1,9 +1,7 @@
 # Take Control Over Revit By Creating Tools & Your Own Toolbar With pyRevit
 
 pyRevit extensions presented @ BILT NA Anaheim, June 14th, 2022
-
-Thanks to all attendees! It was a pleasure.
-Thanks to the [BILT Organization team](https://www.dbei.org/). You made it happen!
+pyRevit extensions presented @ BIM Coordinator Summit, september 8th, 2022
 
 ## Synopsis
 This presentation will run you through the process and the tools for you to create a custom toolbar with a set of custom tools for Revit thanks to pyRevit, some python coding or a dynamo script.
